@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+/* 中央揃え追記 */
+main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex; /* Flexboxの利用 */
+  justify-content: center;
+  padding: 50px 0; /* 上下にpx、左右に0pxの内側余白 */
+}
+
+/* 右側の余白のみに変更 */
+.step-box {
+  width: 300px;
+  background-color: #eeeeee;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+/* 余白無しのクラス */
+.step-box1 {
+  width: 300px;
+  background-color: #eeeeee;
+  padding: 10px;
+  position: relative;
+}
+
+/* 相対パスに変更 */
+.paso {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* 相対パスに変更 */
+.paso1 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* 相対パスに変更 */
+.paso2 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.moji1 {
+  margin-top: 15px;
+}
+
+.moji2 {
+  margin-top: 5px;
+}
+
+.category {
+  display: inline-block;
+  color: white;
+  background-color: #ff9a4b;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    padding: 50px 0 50px;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  /* 下の余白に変更 */
+  .step-box {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* 下の余白無し */
+  .step-box1 {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .paso {
+    height: 150px;
+  }
+
+  .paso1 {
+    height: 150px;
+  }
+
+  .paso2 {
+    height: 150px;
+  }
+}
